@@ -1,7 +1,6 @@
-##NOMEADO DE COMMITS
 
-ADD 'nomearchivo.##' [+ comment]
-MOD 'nomearchivo.##' [+ funcionalidad] [+ comment]
-DEL 'nomearchivo.##' [+ comment]
+## NOMEADO DE COMMITS
 
-
+- ADD 'nomearchivo.##' [+ comment]
+- MOD 'nomearchivo.##' [+ funcionalidad] [+ comment]
+- DEL 'nomearchivo.##' [+ comment]
