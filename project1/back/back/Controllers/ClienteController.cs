@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using back.Models;
 using back.config;
+using Microsoft.EntityFrameworkCore;
 
 namespace back.Controllers
 {
@@ -12,6 +13,13 @@ namespace back.Controllers
         {
             _context = context;
         }
+
+        [HttpGet("list")]
+        public async Task<ActionResult<List<Cliente>>> Get()
+        {
+            return await _context.Clientes.ToListAsync();
+        }
+
 
         [HttpPost("save")]
         public async Task<ActionResult> Post(Cliente cliente)
