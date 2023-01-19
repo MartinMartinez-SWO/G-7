@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\martin.martinez\\OneDrive - SoftwareONE\\Desktop\\SWO Stuff\\PairProgramming\\project1\\back\\back\\back.csproj": {}
+    "C:\\proyectos\\EQUIPO\\G-7\\project1\\back\\back\\back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\martin.martinez\\OneDrive - SoftwareONE\\Desktop\\SWO Stuff\\PairProgramming\\project1\\back\\back\\back.csproj": {
+    "C:\\proyectos\\EQUIPO\\G-7\\project1\\back\\back\\back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\martin.martinez\\OneDrive - SoftwareONE\\Desktop\\SWO Stuff\\PairProgramming\\project1\\back\\back\\back.csproj",
+        "projectUniqueName": "C:\\proyectos\\EQUIPO\\G-7\\project1\\back\\back\\back.csproj",
         "projectName": "back",
-        "projectPath": "C:\\Users\\martin.martinez\\OneDrive - SoftwareONE\\Desktop\\SWO Stuff\\PairProgramming\\project1\\back\\back\\back.csproj",
-        "packagesPath": "C:\\Users\\martin.martinez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\martin.martinez\\OneDrive - SoftwareONE\\Desktop\\SWO Stuff\\PairProgramming\\project1\\back\\back\\obj\\",
+        "projectPath": "C:\\proyectos\\EQUIPO\\G-7\\project1\\back\\back\\back.csproj",
+        "packagesPath": "C:\\Users\\emma.carpinteiro\\.nuget\\packages\\",
+        "outputPath": "C:\\proyectos\\EQUIPO\\G-7\\project1\\back\\back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\martin.martinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\emma.carpinteiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
