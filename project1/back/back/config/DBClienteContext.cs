@@ -11,7 +11,7 @@ namespace back.config
 
         }
 
-        public DbSet<Cliente> clientes { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
 
     }
 }

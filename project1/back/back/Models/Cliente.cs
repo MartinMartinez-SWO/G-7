@@ -8,6 +8,7 @@
        public string Apelidos { get; set; }
 
 
+        public Cliente() { }
         public Cliente(int id, string name, string apelidos)
         {
             this.Id = id;

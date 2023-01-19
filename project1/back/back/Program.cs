@@ -11,10 +11,19 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DBClienteContext>(options => {
 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("BloggingDatabase"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AlquicuntisDatabase"));
 });
 
+
+builder.Services.AddCors(options => {
+    options.AddPolicy("mi_politica", app => {
+        app.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        });
+    });
+
 var app = builder.Build();
+
+app.UseCors("mi_politica ");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
