@@ -3,31 +3,35 @@ import React from "react";
 function Table () {
     return (
        <table class="table table-striped">
+         <thead>
             <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Apelidos</th>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Apelidos</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
-                <td>1</td>
+                <th scope="row">1</th>
                 <td>Martín</td>
                 <td>Martínez Martínez</td>
             </tr>
             <tr>
-                <td>2</td>
+                <th scope="row">2</th>
                 <td>Zoi</td>
-                <td>Betancourt Hernández</td>
+                <td>Betancourt Alfa</td>
             </tr>
             <tr>
-                <td>3</td>
+                <th scope="row">3</th>
                 <td>Iván</td>
                 <td>Eirea XOXO</td>
             </tr>
             <tr>
-                <td>4</td>
+                <th scope="row">4</th>
                 <td>César</td>
-                <td>Guerra Méndez</td>
+                <td>Guerra Neferten</td>
             </tr>
+        </tbody>
        </table>
     )
 }
