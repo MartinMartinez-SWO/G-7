@@ -23,7 +23,7 @@ builder.Services.AddCors(options => {
 
 var app = builder.Build();
 
-app.UseCors("mi_politica ");
+app.UseCors("mi_politica");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

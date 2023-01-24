@@ -22,7 +22,7 @@ namespace back.Controllers
 
 
         [HttpPost("save")]
-        public async Task<ActionResult> Post(Cliente cliente)
+        public async Task<ActionResult> Post([FromBody] Cliente cliente)
         {
             _context.Add(cliente);
             await _context.SaveChangesAsync();
