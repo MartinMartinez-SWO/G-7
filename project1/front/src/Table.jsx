@@ -3,14 +3,11 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 function Table () {
+
+    // LISTAR
+
+        // Hook
     const [clientes, setClientes]  = useState([]);
-
-    const [clientesFormu, setClientesFormu]  = useState({
-        nombre: " ",
-        apellidos: " "
-    });
-
-    const {nombre, apellidos} = clientesFormu;
 
     useEffect( () => {
         axios.get('http://localhost:5066/list')
@@ -21,7 +18,7 @@ function Table () {
       
       }, [])
 
-    // Botón LISTAR
+    // Funcionalidade do botón
       const handleClickListar = () => {
         let tabla = document.getElementById("tabla");
 
@@ -32,22 +29,34 @@ function Table () {
         }
       }
 
-    const handleSubmit = (e) => {
+    //------------
+
+    // GARDAR
+
+        // Hook
+    const [clientesFormu, setClientesFormu]  = useState({
+        nombre: " ",
+        apellidos: " "
+    });
+
+    const {nombre, apellidos} = clientesFormu;
+
+    // Funcionalidade dos inputs
+    const handleChange = (e) => {
+       e.preventDefault();
+       const nombreInput    = e.target.name;
+       const apellidosInput = e.target.value;
+       setClientesFormu({ ...clientesFormu, [nombreInput]: apellidosInput})
+      }
+
+    // Funcionalidade botón
+      const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Estamos dentro de matrix")
         axios.post('http://localhost:5066/save', clientesFormu)
          .then( res => console.log(res))
          .catch(error => console.log(error))
     }
-
-    // Botón GUARDAR
-    const handleChange = (e) => {
-       e.preventDefault();
-       const nombreInput    = e.target.name;
-       const apellidosInput = e.target.value;
-       setClientesFormu({ ...clientesFormu, [nombreInput]: apellidosInput})
-       console.log(clientesFormu.name);
-      }
 
       return (
         <>
